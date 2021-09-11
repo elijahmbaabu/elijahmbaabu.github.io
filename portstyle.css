@@ -17,6 +17,7 @@ text-decoration: none;
 .navbar{
 position: fixed;
 z-index: 999;
+height: 10%;
 width: 100%;
 font-family: 'Ubuntu', sans-serif;
 padding: 30px 0;
@@ -218,6 +219,9 @@ section .heading::after{
 .about .about-items a:hover{
     color: coral;
     background: none;
+}
+.about .about-items a span{
+    color: coral;
 }
 
 
@@ -533,6 +537,7 @@ footer li{
     margin: 0 5px;
     cursor: pointer;
     padding: 7px 9px;
+    color: white;
 }
 footer li:hover{
     background: none;
