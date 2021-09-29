@@ -50,7 +50,7 @@ transition: all 0.3s ease;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
-    margin-left: 24px;
+    margin-left: 16px;
     transition: color 0.3s ease;
 }
 .navbar .nav-list li a:hover{
@@ -172,7 +172,6 @@ section .heading::before{
 }
 
 section .heading::after{
-    /* content: "Who I'm I?"; */
     position: absolute;
     font-size: 24px;
     bottom: -15px;
@@ -593,6 +592,14 @@ footer li:hover{
         border: 1px coral solid;
         transition: all 0.3 ease;
     }
+    footer{
+        background: #111;
+        padding: 24px 27px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 @media (max-width: 1045px) {
     .max-width{
@@ -655,6 +662,99 @@ footer li:hover{
     .skills .skills-items .column{
         width: calc(100% - 38px);
         margin-bottom: 36px;
+    }
+}
+@media (max-width: 500px) {
+    .max-width{
+        padding: 0;
+    }
+    .menu-bars{
+        z-index: 999;
+        display: block;
+    }
+    .menu-bars i.active:before{
+        content: "\f00d";
+    }
+    .navbar .nav-list{
+        position: fixed;
+        background: #111;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        padding-top: 85px;
+        transition: all 0.3s ease;
+    }
+    .navbar .nav-list.active{
+        left: 0;
+    }
+    .navbar .nav-list li{
+        display: block;
+    }
+    .navbar .nav-list li a{
+        display: inline-block;
+        margin: 25px 0;
+        font-size: 27px;
+    }
+    .home .home-items .item2{
+        font-size: 70px;  
+    }
+    .home .home-items .item3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-items .column{
+        width: 100%;
+    }
+    .about .about-items .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-items .right, .skills .skills-items .right, 
+    .contacts .contacts-items .right{
+        flex: 100%;
+        
+    }
+    .services .services-items .card{
+        width: calc(100% - 38px);
+    }
+    .skills .skills-items .column{
+        width: calc(100% - 38px);
+        margin-bottom: 36px;
+    }
+    .about .heading{
+        font-size: 16px;
+    }
+    .navbar .logo a{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    footer{
+        background: #111;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 24px;
+        margin-right: 0;
+        margin-bottom: 24px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    section .heading::after{
+        position: absolute;
+        font-size: 16px;
+        bottom: -15px;
+        left: 50%;
+        padding: 5px;
+        color: coral;
+        background: #fff;
+        transform: translateX(-50%);
     }
 
 }
