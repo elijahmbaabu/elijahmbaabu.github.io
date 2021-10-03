@@ -5,7 +5,7 @@ padding: 0;
 box-sizing: border-box;
 text-decoration: none;
 }
-.html{
+html{
     scroll-behavior: smooth;
 }
 .max-width{
@@ -17,7 +17,6 @@ text-decoration: none;
 .navbar{
 position: fixed;
 z-index: 999;
-height: 10%;
 width: 100%;
 font-family: 'Ubuntu', sans-serif;
 padding: 30px 0;
@@ -68,11 +67,11 @@ transition: all 0.3s ease;
     right: 30px;
     bottom: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     color: #fff;
     z-index: 9999;
-    font-size: 32px;
-    border-radius: 7px;
+    font-size: 30px;
+    border-radius: 6px;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
@@ -82,7 +81,7 @@ transition: all 0.3s ease;
     opacity: 1;
     pointer-events: auto;
     bottom: 30px;
-}
+} 
 .menu-bars{
     color: #fff;
     font-size: 27px;
@@ -407,8 +406,8 @@ transition: all 0.3 ease;
     margin-top: 22px;
 }
 .owl-dot{
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
     margin: 0 7px;
     outline: none!important;
     border-radius: 50%;
@@ -663,6 +662,9 @@ footer li:hover{
         width: calc(100% - 38px);
         margin-bottom: 36px;
     }
+    footer{
+        margin-top: 24px;
+    }
 }
 @media (max-width: 500px) {
     .max-width{
@@ -726,17 +728,16 @@ footer li:hover{
         width: calc(100% - 38px);
         margin-bottom: 36px;
     }
-    .about .heading{
-        font-size: 16px;
-    }
     .navbar .logo a{
-        font-size: 16px;
+        font-size: 20px;
         margin: 0;
         padding: 0;
     }
     footer{
         background: #111;
-        padding: 0;
+        padding-top: 12px;
+        padding-right: 0;
+        padding-left: 0;
         margin-left: 0;
         margin-top: 24px;
         margin-right: 0;
@@ -748,7 +749,7 @@ footer li:hover{
     }
     section .heading::after{
         position: absolute;
-        font-size: 16px;
+        font-size: 18px;
         bottom: -15px;
         left: 50%;
         padding: 5px;
