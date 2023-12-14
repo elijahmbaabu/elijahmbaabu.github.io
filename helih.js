@@ -24,14 +24,14 @@ $(document).ready(function(){
     });
     // typed string scripts 
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Web Designer", "Android Developer", "Research Engineer", "Freelancer", "Entrepreneur", "Data scientist"],
+        strings: ["Software Developer", "Test Analyst", "Web Designer", "Mobile Developer", "Research Engineer", "Freelancer", "Entrepreneur", "Data scientist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     })
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Web Designer", "Android Developer", "Research Engineer", "Freelancer", "Entrepreneur", "Data scientist"],
+        strings: ["Software Developer", "Test Analyst", "Web Designer", "Android Developer", "Research Engineer", "Freelancer", "Entrepreneur", "Data scientist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
